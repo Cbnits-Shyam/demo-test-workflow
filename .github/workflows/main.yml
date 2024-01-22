@@ -8,6 +8,6 @@ jobs:
     name: PRODUCTION_DEPLOY
     runs-on: ubuntu-latest
     steps:
-      name: hello-world-test
-      - run: |
-        echo "Hello World!"
+      name: Set up Node.js
+    - run: |
+        echo "Hello World"
