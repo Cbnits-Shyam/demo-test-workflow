@@ -8,5 +8,7 @@ jobs:
     name: PRODUCTION_DEPLOY
     runs-on: ubuntu-latest
     steps:
-      name: Set up Node.js
-      run: echo "Hello World"
+    - uses: action/Checkout@V4
+      name: Tes
+    - run: |
+        echo "Hello World"
