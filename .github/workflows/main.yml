@@ -8,7 +8,7 @@ jobs:
     name: PRODUCTION_DEPLOY
     runs-on: ubuntu-latest
     steps:
-    - uses: action/Checkout@V4
+    - uses: actions/checkout@v2
       name: Tes
     - run: |
         echo "Hello World"
