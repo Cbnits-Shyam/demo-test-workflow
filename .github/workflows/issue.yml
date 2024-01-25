@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - run: |
-            echo "${{github.event}}"
+            echo "${{ toJson(github.event) }}"
         # - uses: peter-evans/create-or-update-comment@v3
         #   with:
         #     issue-number: ${{ github.event.issue.number }}
