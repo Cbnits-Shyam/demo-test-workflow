@@ -1,14 +1,24 @@
-on:
+name: hello World workflow
+
+
+on: 
   push:
     branches:
       - main
+  workflow_dispatch:
+
 
 jobs:
-  prod_deploy:
-    name: PRODUCTION_DEPLOY
+  print_hello_world:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      name: Tes
-    - run: |
-        echo "Hello World"
+      - name: Print hello World
+        run: echo "Hello World"
+        shell: bash
+  
+  print_good_bye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Good bye the world
+        run: echo "Good bye the workd"
+        shell: bash
