@@ -1,3 +1,5 @@
+name: Issue Creation
+
 on:
     issues:
         types: [opened]
