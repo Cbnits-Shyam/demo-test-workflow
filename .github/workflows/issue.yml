@@ -7,11 +7,13 @@ jobs:
     create_comment:
         runs-on: ubuntu-latest
         steps:
+        - run: echo ${{github.event}}
         - uses: peter-evans/create-or-update-comment@v3
           with:
             issue-number: ${{ github.event.issue.number }}
             body: |
                 hello world
                 - this is a bullet point
+        
     
     
