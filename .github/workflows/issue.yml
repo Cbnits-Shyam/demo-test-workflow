@@ -1,0 +1,17 @@
+on:
+    issues:
+        types: [opened]
+        
+        
+jobs:
+    create_comment:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: peter-evans/create-or-update-comment@v3
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                hello world
+                - this is a bullet point
+    
+    
