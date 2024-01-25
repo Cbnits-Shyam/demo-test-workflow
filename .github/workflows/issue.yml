@@ -13,7 +13,7 @@ jobs:
         - uses: peter-evans/create-or-update-comment@v3
           name: Creating a comment on issue
           with:
-            issue-number: ${{ github.event.issue.number }}
+            issue-number: "${{ github.event.issue.number }}"
             body: |
                 hello world
                 - this is a bullet point
